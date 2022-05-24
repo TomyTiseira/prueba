@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+:root {
+    --main-color: #fffacd;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+* {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--bg);
+    /* color: #fff;  */
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    font-size: 1.7rem;
+    color: #000;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.header {
+    background-color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    top: 0; left: 0; right: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar__ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar__a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color:#fff;
+}
+
+.navbar__a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.header__logo img {
+    width: 6rem;
+}
+
+.flex-container-main__inicio{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background: url(images/bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.flex-container-main__content {
+    max-width: 60rem;
+}
+
+.flex-container-main__content h3 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.flex-container-main__content p {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eee;
+}
+
+.flex-container-main__title {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.flex-container-main__title span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.flex-container-main__container-nosotros {
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    flex-wrap: wrap;
+}
+
+.flex-container-main__img {
+    flex: 1 1 45rem;
+}
+
+.flex-container-main__img img {
+    width: 100%;
+}
+
+.flex-container-main__container-nosotros .flex-container-main__content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.flex-container-main__container-nosotros .flex-container-main__content h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.flex-container-main__container-nosotros .flex-container-main__content p {
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+/* Aplica para "promociones" y "clientes" */
+.flex-container-main__grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.flex-container-main__box {
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.flex-container-main__box img {
+    height: 10rem;
+}
+
+.flex-container-main__box h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.flex-container-main__precio {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.flex-container-main__precio span {
+    font-size: 1.5rem;
+    /* Tachado */
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.flex-container-main__promociones .flex-container-main__box:hover {
+    background: #fff;
+}
+
+/* A todos los hijos le aplique la propiedad */
+.flex-container-main__promociones .flex-container-main__box:hover > * {
+    color: var(--black);
+}
+
+.flex-container-main__clientes .flex-container-main__box {
+    padding: 3rem 2rem;
+}
+
+.flex-container-main__clientes .flex-container-main__box p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 2rem 0;
+}
+
+.flex-container-main__cliente {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.flex-container-main__stars {
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.flex-container-main__container-contacto {
+    display: flex;
+    background: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.flex-container-main__iframe {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: var(--black);
+    text-align: center;
+}
+
+.footer__nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer__nav ul li {
+    padding: 1rem 2rem;
+}
+
+.footer__nav ul li a {
+    height: 5rem;
+    width: 5rem;  
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--border);
+    margin: 0.3rem;
+    border-radius: 50%;
+}
+
+.footer__nav ul li a:hover {
+    background: var(--main-color);
+    color: #000;
+}
+
+.footer__creditos {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.footer__creditos span {
+    color: var(--main-color);
+}
